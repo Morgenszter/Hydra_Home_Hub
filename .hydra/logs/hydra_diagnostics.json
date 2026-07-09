@@ -1,0 +1,20 @@
+{
+  "status": {
+    "command": "status",
+    "ok": true,
+    "payload": {
+      "bridge_online": false,
+      "health": {
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      "tray": {},
+      "runtime": {}
+    }
+  },
+  "paths": {
+    "hydraHome": "/mnt/data/HYDRA_V84_CODE_SPRINT_P1_WORK/.hydra",
+    "logsDir": "/mnt/data/HYDRA_V84_CODE_SPRINT_P1_WORK/.hydra/logs",
+    "configDir": "/mnt/data/HYDRA_V84_CODE_SPRINT_P1_WORK/.hydra/config",
+    "modelsDir": "/mnt/data/HYDRA_V84_CODE_SPRINT_P1_WORK/.hydra/models"
+  }
+}

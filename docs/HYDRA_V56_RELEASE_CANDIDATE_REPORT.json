@@ -1,0 +1,13 @@
+{
+  "release": "HYDRA v5.6 Release Candidate Patch",
+  "base_zip": "HYDRA_INTELLIGENCE_V411_EXISTING_HUD_PATCH_FIXED.zip",
+  "included_prior_patches": [
+    "HYDRA_INTELLIGENCE_V52_HUD_VISUAL_INTEGRATION_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V521_FRAME_BINDING_ENGINE_PATCH.zip"
+  ],
+  "python_files_checked": 25,
+  "python_compile_errors": [],
+  "frontend_missing": [],
+  "backend_missing": [],
+  "status": "PASS"
+}

@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic
+starlette
+httpx
+httpx2
+python-multipart
+websockets

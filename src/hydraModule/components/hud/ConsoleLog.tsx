@@ -1,0 +1,2 @@
+import React from "react";import {View,Text} from "react-native";
+export default function ConsoleLog({logs=[]}:{logs?:any[]}){return <View>{logs.map((l,i)=><Text key={i} style={{color:"#ccc"}}>{String(l.message??l)}</Text>)}</View>}

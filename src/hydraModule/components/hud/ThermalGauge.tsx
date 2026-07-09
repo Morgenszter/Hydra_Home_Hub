@@ -1,0 +1,2 @@
+import React from "react";import {Text} from "react-native";
+export default function ThermalGauge({temperature=32}:{temperature?:number}){return <Text style={{color:"orange"}}>TEMP {temperature}°C</Text>}

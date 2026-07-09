@@ -1,0 +1,20 @@
+{
+  "checked": 78,
+  "compile_errors": [],
+  "copied": {
+    "app.json": true,
+    "eas.json": true,
+    "README_PL.md": true,
+    "HYDRA_V86_ANDROID_CONFIG_REPORT.json": true,
+    "src/config/hydraAndroidConfig.ts": true,
+    "scripts/build_android.bat": true,
+    "scripts/build_android.ps1": true,
+    "assets/android/icon.png": true,
+    "assets/android/adaptive-icon.png": true,
+    "assets/android/splash.png": true
+  },
+  "smoke_returncode": 0,
+  "smoke_stdout": "{'ok': True, 'missing': [], 'bridgeDefaultHost': 'http://192.168.1.100:8765', 'bridgeDefaultWs': 'ws://192.168.1.100:8765/ws/runtime'}\n",
+  "smoke_stderr": "Spreadsheet runtime warmup failed during python startup\nTraceback (most recent call last):\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py\", line 785, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py\", line 720, in _warm_feature_flows\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py\", line 704, in _warm_collaboration_flows\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py\", line 30820, in hydrate_crdt_from_proto\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py\", line 749, in __call__\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py\", line 150, in call\nartifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.\n",
+  "status": "PASS"
+}

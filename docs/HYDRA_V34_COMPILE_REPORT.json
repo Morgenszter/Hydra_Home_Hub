@@ -1,0 +1,11 @@
+{
+  "patched_hud_files": [
+    "src/screens/MainHUD.tsx"
+  ],
+  "python_compile_errors": [],
+  "typescript_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

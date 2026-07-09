@@ -1,0 +1,8 @@
+HYDRA Android source build checklist
+1. Open the mobile/app project in Android Studio / Expo workflow used by the repo.
+2. Verify:
+   - src/mobile/offline/hydraOfflineState.ts
+   - src/mobile/offline/hydraOfflineStorage.ts
+   - src/hooks/useHydraOfflineRecovery.ts
+3. Wire the recovery hook into the HUD bootstrap/root screen.
+4. Run Android debug build and verify reconnect / replay flow.

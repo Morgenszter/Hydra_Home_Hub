@@ -1,0 +1,39 @@
+{
+  "release": "HYDRA v7.0 Full Application Build Pack",
+  "base_zip": "HYDRA_INTELLIGENCE_V411_EXISTING_HUD_PATCH_FIXED.zip",
+  "patches_applied": [
+    "HYDRA_INTELLIGENCE_V52_HUD_VISUAL_INTEGRATION_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V521_FRAME_BINDING_ENGINE_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V56_RELEASE_CANDIDATE_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V57_FINAL_RELEASE_HARDENING_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V63_AUTO_MODE_SOURCE_PATCH_FIXED.zip",
+    "HYDRA_INTELLIGENCE_V68_UNIFIED_EXPANSION_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V69_LIVE_INTEGRATION_PATCH.zip"
+  ],
+  "windows_app": {
+    "backend_root": "backend",
+    "entry_candidates": [
+      "backend/api/asgi_v51.py",
+      "backend/api/asgi_v50.py"
+    ],
+    "features": [
+      "pairing",
+      "discovery",
+      "tray",
+      "voice-runtime",
+      "live-runtime-state",
+      "udp-fast-path"
+    ]
+  },
+  "android_app": {
+    "frontend_root": "src",
+    "features": [
+      "hud",
+      "offline-cache",
+      "offline-storage",
+      "recovery-hook",
+      "pairing",
+      "websocket"
+    ]
+  }
+}

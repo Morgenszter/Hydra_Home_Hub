@@ -1,0 +1,1 @@
+export enum AudioEvent{PLAY="play",STOP="stop",PAUSE="pause"}

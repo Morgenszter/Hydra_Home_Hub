@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Hydra Home",
+    "slug": "hydra-home",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/android/icon.png",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.alphariusomegon.hydrahome",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android/adaptive-icon.png",
+        "backgroundColor": "#010507"
+      },
+      "versionCode": 86,
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_MULTICAST_STATE",
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT",
+        "ACCESS_FINE_LOCATION",
+        "VIBRATE"
+      ]
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "scheme": "hydrahome",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/android/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#010507"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/android/icon.png"
+    },
+    "extra": {
+      "hydra": {
+        "androidProfile": "v86",
+        "bridgeDefaultHost": "http://192.168.1.100:8765",
+        "udpDiscoveryPort": 5555,
+        "gui": "v85-alpha-visual-upgrade",
+        "bridgeDefaultWs": "ws://192.168.1.100:8765/ws/runtime"
+      },
+      "eas": {
+        "projectId": "00000000-0000-0000-0000-hydrahomev86"
+      }
+    }
+  }
+}

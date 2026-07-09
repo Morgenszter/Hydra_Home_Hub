@@ -1,0 +1,22 @@
+{
+  "version": "V86_ANDROID_CONFIG",
+  "base": "HYDRA_INTELLIGENCE_V85_GUI_VISUAL_UPGRADE_MERGED.zip",
+  "changed_files": [
+    "app.json",
+    "eas.json",
+    "assets/android/icon.png",
+    "assets/android/adaptive-icon.png",
+    "assets/android/splash.png",
+    "src/config/hydraAndroidConfig.ts",
+    "docs/HYDRA_V86_ANDROID_CONFIG.md",
+    "scripts/build_android.bat",
+    "scripts/build_android.ps1"
+  ],
+  "android_package": "com.alphariusomegon.hydrahome",
+  "versionCode": 86,
+  "build_profiles": [
+    "development",
+    "preview",
+    "production"
+  ]
+}

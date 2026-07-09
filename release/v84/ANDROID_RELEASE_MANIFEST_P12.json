@@ -1,0 +1,21 @@
+{
+  "release": "HYDRA v8.4 P12 Final Android Release Pass",
+  "root": "src/app/HydraAndroidBootstrap.tsx",
+  "modes": [
+    "cockpit",
+    "operator",
+    "alpha"
+  ],
+  "defaults": {
+    "api": "http://192.168.1.100:8765",
+    "ws": "ws://192.168.1.100:8765/ws/runtime"
+  },
+  "required_files": [
+    "app.json",
+    "eas.json",
+    "src/config/hydraAndroidConfig.ts",
+    "assets/android/icon.png",
+    "assets/android/adaptive-icon.png",
+    "assets/android/splash.png"
+  ]
+}

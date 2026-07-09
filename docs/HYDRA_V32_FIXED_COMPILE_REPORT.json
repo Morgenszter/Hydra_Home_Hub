@@ -1,0 +1,80 @@
+{
+  "fixes": [
+    "Dodano export {} do plików modułu bez import/export.",
+    "Zastąpiono src/hydraModule/index.ts bezpiecznym manifestem.",
+    "Dodano TelemetryService fallback.",
+    "Zmieniono hydraStorage z dynamic import na guarded require."
+  ],
+  "inspection": {
+    "core/EventBus.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "core/Logger.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "core/HydraKernel.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "store/HydraStore.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "store/HydraProvider.tsx": {
+      "size": 0,
+      "head": ""
+    },
+    "store/useHydra.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "network/BridgeClient.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "network/WebSocketClient.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "network/UDPDiscovery.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "audio/AudioEngine.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "audio/AudioQueue.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "ble/BLEController.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "radar/RadarEngine.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "telemetry/Telemetry.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "telemetry/Metrics.ts": {
+      "size": 0,
+      "head": ""
+    },
+    "telemetry/SystemInfo.ts": {
+      "size": 0,
+      "head": ""
+    }
+  },
+  "python_compile_errors": [],
+  "typescript_check": {
+    "returncode": 2,
+    "stdout": "src/hydraModule/core/index(1).ts(2,10): error TS2305: Module '\"./EventBus\"' has no exported member 'default'.\nsrc/hydraModule/core/index(1).ts(2,31): error TS2305: Module '\"./EventBus\"' has no exported member 'HydraBus'.\nsrc/hydraModule/core/index(1).ts(3,10): error TS2305: Module '\"./HydraKernel\"' has no exported member 'default'.\nsrc/hydraModule/store/index.ts(1,9): error TS2305: Module '\"./HydraStore\"' has no exported member 'default'.\nsrc/hydraModule/store/index.ts(3,9): error TS2305: Module '\"./useHydra\"' has no exported member 'default'.\nsrc/hydraModule/telemetry/index.ts(1,9): error TS2305: Module '\"./Telemetry\"' has no exported member 'default'.\nsrc/hydraModule/telemetry/index.ts(2,9): error TS2305: Module '\"./Metrics\"' has no exported member 'default'.\n",
+    "stderr": ""
+  }
+}
