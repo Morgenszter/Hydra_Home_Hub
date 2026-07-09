@@ -1,0 +1,1 @@
+import AudioEngine from "./AudioEngine"; export default class AudioManager{play(id:string){AudioEngine.play(id)} stop(){AudioEngine.stop()}}

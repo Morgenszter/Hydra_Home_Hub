@@ -1,0 +1,33 @@
+{
+  "release": "HYDRA v8.4 P10 Final Release Hardening",
+  "canonical_entrypoints": {
+    "backend": "backend.api.asgi_v51:app",
+    "android": "src/app/HydraAndroidBootstrap.tsx",
+    "desktop_operator": "desktop/operator_shell/hydra_tray_app.py",
+    "voice": "backend/voice/native_voice_integration_v79.py"
+  },
+  "expected_outputs": {
+    "windows": "dist/HYDRA_Win64",
+    "android": "dist/android",
+    "handoff": "HYDRA_INTELLIGENCE_V84_RELEASE_HANDOFF_WIN11_ANDROID.zip"
+  },
+  "required_assets": [
+    "config/voice.v84.json",
+    "models/vosk-pl",
+    "models/openwakeword/omegon.onnx",
+    "assets/loading",
+    "assets/gui-effects",
+    "assets/v85-gui"
+  ],
+  "critical_runtime_endpoints": [
+    "/health",
+    "/health/full",
+    "/native-voice/status",
+    "/native-voice/mic/status",
+    "/operator/status",
+    "/operator/action",
+    "/live/state",
+    "/live/event",
+    "/ws/runtime"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "checked": 76,
+  "compile_errors": [],
+  "v85_file_count": 802,
+  "v85_ext_counts": {
+    ".json": 57,
+    ".tsx": 104,
+    ".js": 1,
+    ".txt": 6,
+    ".bak": 2,
+    "<none>": 17,
+    ".py": 82,
+    ".md": 92,
+    ".docx": 1,
+    ".png": 85,
+    ".bat": 2,
+    ".yml": 1,
+    ".mp3": 3,
+    ".ts": 263,
+    ".bak_v34": 1,
+    ".pyc": 75,
+    ".html": 1,
+    ".ps1": 6,
+    ".spec": 2,
+    ".sh": 1
+  },
+  "asset_count": 32,
+  "smoke_returncode": 0,
+  "smoke_stdout": "{'ok': True, 'missing': [], 'hasAlphaMode': True, 'v85AssetCount': 39}\n",
+  "smoke_stderr": "Spreadsheet runtime warmup failed during python startup\nTraceback (most recent call last):\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py\", line 785, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py\", line 720, in _warm_feature_flows\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py\", line 704, in _warm_collaboration_flows\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py\", line 30820, in hydrate_crdt_from_proto\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py\", line 749, in __call__\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py\", line 150, in call\nartifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.\n",
+  "status": "PASS"
+}

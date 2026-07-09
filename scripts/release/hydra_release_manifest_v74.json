@@ -1,0 +1,19 @@
+{
+  "release": "HYDRA v7.4 Release Engineering Pack",
+  "targets": [
+    "windows_bridge",
+    "android_hud"
+  ],
+  "artifacts": [
+    "HYDRA_INTELLIGENCE_V74_RELEASE_ENGINEERING_PACK.zip",
+    "docs/HYDRA_V74_RELEASE_CHECKLIST.md",
+    "docs/HYDRA_V74_TEST_MATRIX.md"
+  ],
+  "steps": [
+    "compile backend",
+    "run smoke scripts",
+    "bundle source tree",
+    "prepare windows build notes",
+    "prepare android build notes"
+  ]
+}

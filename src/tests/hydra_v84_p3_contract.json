@@ -1,0 +1,12 @@
+{
+  "messages": [
+    "HYDRA_RUNTIME_SNAPSHOT",
+    "HYDRA_LIVE_EVENT",
+    "HYDRA_OPERATOR_RESULT",
+    "HYDRA_VOICE_STATE_PATCH"
+  ],
+  "bootstrap_modes": [
+    "cockpit",
+    "operator"
+  ]
+}

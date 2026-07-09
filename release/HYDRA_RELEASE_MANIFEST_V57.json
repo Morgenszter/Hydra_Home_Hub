@@ -1,0 +1,25 @@
+{
+  "product": "HYDRA Intelligence System",
+  "version": "5.7.0-final-hardening",
+  "targets": {
+    "windows": "Win11 x64 standalone onedir build",
+    "android": "APK release build"
+  },
+  "major_layers": [
+    "Pairing + Discovery",
+    "WebSocket hardening + replay",
+    "Alpha Legion 2.5D HUD texture layer",
+    "Frame Binding Engine",
+    "Event-driven HUD reactions",
+    "OMEGON Voice Core scaffold",
+    "UDP Fast Path + HMAC",
+    "Release scripts and test matrix"
+  ],
+  "base_zip": "HYDRA_INTELLIGENCE_V411_EXISTING_HUD_PATCH_FIXED.zip",
+  "patches_applied": [
+    "HYDRA_INTELLIGENCE_V52_HUD_VISUAL_INTEGRATION_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V521_FRAME_BINDING_ENGINE_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V56_RELEASE_CANDIDATE_PATCH.zip"
+  ],
+  "icon": "src/assets/hud/alpha_legion/HYDRA_Alpha_Legion_icon_01_512.png"
+}

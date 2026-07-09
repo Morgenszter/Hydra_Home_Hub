@@ -1,0 +1,33 @@
+{
+  "release": "HYDRA v8.4 P13 Final Production Consolidation",
+  "backend": {
+    "entrypoint": "backend.api.asgi_v51:app",
+    "start": "python -m uvicorn backend.api.asgi_v51:app --host 0.0.0.0 --port 8765",
+    "port": 8765
+  },
+  "android": {
+    "root": "src/app/HydraAndroidBootstrap.tsx",
+    "modes": [
+      "cockpit",
+      "operator",
+      "alpha"
+    ],
+    "config": "src/config/hydraAndroidConfig.ts",
+    "api": "http://<WIN11_IP>:8765",
+    "ws": "ws://<WIN11_IP>:8765/ws/runtime"
+  },
+  "desktop": {
+    "operator_tray": "desktop/operator_shell/hydra_tray_app.py",
+    "operator_shell": "desktop/operator_shell/hydra_operator_shell.py",
+    "panel": "desktop/operator_shell/panel_assets/index.html"
+  },
+  "voice": {
+    "facade": "backend/voice/native_voice_integration_v79.py",
+    "mic_runtime": "backend/voice/microphone_runtime_v84.py",
+    "config": "config/voice.v84.example.json",
+    "models": [
+      "models/vosk-pl",
+      "models/openwakeword/omegon.onnx"
+    ]
+  }
+}

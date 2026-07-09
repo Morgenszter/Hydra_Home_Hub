@@ -1,0 +1,129 @@
+{
+  "python_compile_errors": [],
+  "typescript_check": {
+    "returncode": 2,
+    "stdout": "src/components/hud/RadarFx.tsx(10,29): error TS2698: Spread types may only be created from object types.\nsrc/hydraModule/components/hud/ConsoleLogFx.tsx(3,41): error TS2307: Cannot find module '../../theme/HydraComponentFx' or its corresponding type declarations.\nsrc/hydraModule/components/hud/DeviceStatusFx.tsx(3,40): error TS2307: Cannot find module '../../theme/HydraComponentFx' or its corresponding type declarations.\nsrc/hydraModule/components/hud/RadarFx.tsx(3,39): error TS2307: Cannot find module '../../theme/HydraComponentFx' or its corresponding type declarations.\nsrc/hydraModule/components/hud/RadarFx.tsx(10,29): error TS2698: Spread types may only be created from object types.\nsrc/hydraModule/components/hud/StatusPanelFx.tsx(3,41): error TS2307: Cannot find module '../../theme/HydraComponentFx' or its corresponding type declarations.\nsrc/hydraModule/components/hud/StatusPanelFx.tsx(10,29): error TS2698: Spread types may only be created from object types.\n",
+    "stderr": ""
+  },
+  "candidates": [
+    "src/hooks/useHydraRadarFx.ts",
+    "src/hooks/useHydraConsoleFx.ts",
+    "src/hooks/useHydraDeviceTileFx.ts",
+    "src/hydraModule/radar/RadarEngine.ts",
+    "src/hydraModule/radar/RadarRenderer.ts",
+    "src/hydraModule/components/hud/ConsoleLog.tsx",
+    "src/hydraModule/components/hud/DeviceStatus.tsx",
+    "src/hydraModule/components/hud/Radar.tsx",
+    "src/hydraModule/components/hud/StatusPanel.tsx",
+    "src/components/hud/ConsoleLog.tsx",
+    "src/components/hud/DeviceStatus.tsx",
+    "src/components/hud/Radar.tsx",
+    "src/components/hud/StatusPanel.tsx",
+    "src/components/hud/HydraProtocolConsole.tsx",
+    "src/components/hud/HydraAnimationStatusPanel.tsx",
+    "src/components/hud/BoundHydraStatusPanel.tsx",
+    "src/components/hud/BoundHydraRadar.tsx",
+    "src/components/hud/BoundHydraConsole.tsx",
+    "src/components/hud/BoundHydraDeviceTile.tsx",
+    "src/components/hud/HydraPatchedRadar.tsx",
+    "src/components/hud/HydraPatchedConsoleLog.tsx",
+    "src/components/hud/HydraPatchedDeviceStatus.tsx",
+    "src/common/components/Radar.tsx"
+  ],
+  "patched_files": [
+    {
+      "source": "src/hydraModule/components/hud/ConsoleLog.tsx",
+      "wrapper": "src/hydraModule/components/hud/ConsoleLogFx.tsx"
+    },
+    {
+      "source": "src/hydraModule/components/hud/DeviceStatus.tsx",
+      "wrapper": "src/hydraModule/components/hud/DeviceStatusFx.tsx"
+    },
+    {
+      "source": "src/hydraModule/components/hud/Radar.tsx",
+      "wrapper": "src/hydraModule/components/hud/RadarFx.tsx"
+    },
+    {
+      "source": "src/hydraModule/components/hud/StatusPanel.tsx",
+      "wrapper": "src/hydraModule/components/hud/StatusPanelFx.tsx"
+    },
+    {
+      "source": "src/components/hud/ConsoleLog.tsx",
+      "wrapper": "src/components/hud/ConsoleLogFx.tsx"
+    },
+    {
+      "source": "src/components/hud/DeviceStatus.tsx",
+      "wrapper": "src/components/hud/DeviceStatusFx.tsx"
+    },
+    {
+      "source": "src/components/hud/Radar.tsx",
+      "wrapper": "src/components/hud/RadarFx.tsx"
+    },
+    {
+      "source": "src/components/hud/HydraProtocolConsole.tsx",
+      "wrapper": "src/components/hud/HydraProtocolConsoleFx.tsx"
+    },
+    {
+      "source": "src/components/hud/HydraAnimationStatusPanel.tsx",
+      "wrapper": "src/components/hud/HydraAnimationStatusPanelFx.tsx"
+    }
+  ],
+  "skipped_files": [
+    {
+      "file": "src/hooks/useHydraRadarFx.ts",
+      "reason": "not_visual_component"
+    },
+    {
+      "file": "src/hooks/useHydraConsoleFx.ts",
+      "reason": "not_visual_component"
+    },
+    {
+      "file": "src/hooks/useHydraDeviceTileFx.ts",
+      "reason": "not_visual_component"
+    },
+    {
+      "file": "src/hydraModule/radar/RadarEngine.ts",
+      "reason": "not_visual_component"
+    },
+    {
+      "file": "src/hydraModule/radar/RadarRenderer.ts",
+      "reason": "not_visual_component"
+    },
+    {
+      "file": "src/components/hud/StatusPanel.tsx",
+      "reason": "not_visual_component"
+    },
+    {
+      "file": "src/components/hud/BoundHydraStatusPanel.tsx",
+      "reason": "generated_component"
+    },
+    {
+      "file": "src/components/hud/BoundHydraRadar.tsx",
+      "reason": "generated_component"
+    },
+    {
+      "file": "src/components/hud/BoundHydraConsole.tsx",
+      "reason": "generated_component"
+    },
+    {
+      "file": "src/components/hud/BoundHydraDeviceTile.tsx",
+      "reason": "generated_component"
+    },
+    {
+      "file": "src/components/hud/HydraPatchedRadar.tsx",
+      "reason": "generated_component"
+    },
+    {
+      "file": "src/components/hud/HydraPatchedConsoleLog.tsx",
+      "reason": "generated_component"
+    },
+    {
+      "file": "src/components/hud/HydraPatchedDeviceStatus.tsx",
+      "reason": "generated_component"
+    },
+    {
+      "file": "src/common/components/Radar.tsx",
+      "reason": "not_visual_component"
+    }
+  ]
+}

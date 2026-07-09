@@ -1,0 +1,78 @@
+import React from "react";
+
+import {
+  View,
+  StyleSheet,
+  ScrollView
+} from "react-native";
+
+import Header from "../components/hud/Header";
+import Radar from "../components/hud/Radar";
+import StatusPanel from "../components/hud/StatusPanel";
+import DeviceStatus from "../components/hud/DeviceStatus";
+import ConsoleLog from "../components/hud/ConsoleLog";
+import ThermalGauge from "../components/hud/ThermalGauge";
+import TargetSelector from "../components/hud/TargetSelector";
+import Footer from "../components/hud/Footer";
+
+export default function MainHUD() {
+
+  const logs: any[] = [];
+
+  return (
+
+    <View style={styles.container}>
+
+      <Header />
+
+      <ScrollView
+        contentContainerStyle={styles.content}
+      >
+
+        <Radar />
+
+        <StatusPanel />
+
+        <DeviceStatus
+          online={false}
+        />
+
+        <ThermalGauge
+          temperature={0}
+        />
+
+        <TargetSelector />
+
+        <ConsoleLog
+          logs={logs}
+        />
+
+      </ScrollView>
+
+      <Footer />
+
+    </View>
+
+  );
+
+}
+
+const styles = StyleSheet.create({
+
+  container: {
+
+    flex: 1,
+
+    backgroundColor: "#080D0C"
+
+  },
+
+  content: {
+
+    padding: 12,
+
+    gap: 12
+
+  }
+
+});

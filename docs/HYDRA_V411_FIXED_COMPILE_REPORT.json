@@ -1,0 +1,19 @@
+{
+  "python_compile_errors": [],
+  "typescript_check": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "fixed_wrappers": [
+    "src/hydraModule/components/hud/ConsoleLogFx.tsx",
+    "src/hydraModule/components/hud/DeviceStatusFx.tsx",
+    "src/hydraModule/components/hud/RadarFx.tsx",
+    "src/hydraModule/components/hud/StatusPanelFx.tsx",
+    "src/components/hud/ConsoleLogFx.tsx",
+    "src/components/hud/DeviceStatusFx.tsx",
+    "src/components/hud/RadarFx.tsx",
+    "src/components/hud/HydraProtocolConsoleFx.tsx",
+    "src/components/hud/HydraAnimationStatusPanelFx.tsx"
+  ]
+}

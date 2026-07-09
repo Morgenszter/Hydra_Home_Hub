@@ -1,0 +1,1 @@
+export default function parse(data:string){return {raw:data,timestamp:Date.now()};}

@@ -1,0 +1,20 @@
+{
+  "release": "HYDRA v6.8 Unified Expansion Patch",
+  "base_zip": "HYDRA_INTELLIGENCE_V411_EXISTING_HUD_PATCH_FIXED.zip",
+  "patches_applied": [
+    "HYDRA_INTELLIGENCE_V52_HUD_VISUAL_INTEGRATION_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V521_FRAME_BINDING_ENGINE_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V56_RELEASE_CANDIDATE_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V57_FINAL_RELEASE_HARDENING_PATCH.zip",
+    "HYDRA_INTELLIGENCE_V63_AUTO_MODE_SOURCE_PATCH_FIXED.zip"
+  ],
+  "python_files_checked": 35,
+  "python_compile_errors": [],
+  "smoke": {
+    "tray": true,
+    "voice_runtime": true,
+    "runtime_state": true
+  },
+  "missing": [],
+  "status": "PASS"
+}

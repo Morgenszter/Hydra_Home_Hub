@@ -1,0 +1,2 @@
+import React from "react";import {Text} from "react-native";
+export default function DeviceStatus({online=true}:{online?:boolean}){return <Text style={{color:online?"#0f8":"#f44"}}>{online?"ONLINE":"OFFLINE"}</Text>}

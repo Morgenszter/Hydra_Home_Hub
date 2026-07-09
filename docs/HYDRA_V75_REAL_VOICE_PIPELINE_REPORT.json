@@ -1,0 +1,11 @@
+{
+  "release": "HYDRA v7.5 Real Voice Pipeline",
+  "python_files_checked": 50,
+  "python_compile_errors": [],
+  "smoke": {
+    "returncode": 0,
+    "stdout": "{\n  \"running\": true,\n  \"wakeType\": \"VOICE_WAKE\",\n  \"commandType\": \"VOICE_COMMAND_REJECTED\",\n  \"lastIntent\": {\n    \"ok\": true,\n    \"intent\": \"scene.red_alert\",\n    \"command\": \"scene.red_alert\",\n    \"target\": \"red_alert\",\n    \"params\": {\n      \"sceneId\": \"red_alert\"\n    },\n    \"confidence\": 0.91,\n    \"source_text\": \"włącz czerwony alert\",\n    \"error\": null\n  }\n}\n",
+    "stderr": "Spreadsheet runtime warmup failed during python startup\nTraceback (most recent call last):\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py\", line 785, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py\", line 720, in _warm_feature_flows\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/spreadsheet_warmup.py\", line 704, in _warm_collaboration_flows\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/generated/interface/models.py\", line 30820, in hydrate_crdt_from_proto\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/remote.py\", line 749, in __call__\n  File \"/tmp/tmp.yTcnQsZYiA/artifact_tool_v2-2.8.4/artifact_tool/rpc/client.py\", line 150, in call\nartifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.\n"
+  },
+  "status": "PASS"
+}

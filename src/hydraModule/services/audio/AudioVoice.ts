@@ -1,0 +1,1 @@
+export default class AudioVoice{speak(text:string){console.log(text)}}

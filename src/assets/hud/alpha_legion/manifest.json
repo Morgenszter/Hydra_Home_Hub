@@ -1,0 +1,38 @@
+[
+  {
+    "file": "HYDRA_Frame_01_wide_top_bottom_serpents.png",
+    "source": "gothic_steampunk_frame_z_elementami_smoka.png",
+    "size": "1672x941",
+    "variants": [
+      "original_png",
+      "transparent_png"
+    ]
+  },
+  {
+    "file": "HYDRA_Frame_02_vertical_serpent_columns.png",
+    "source": "fantazyjna_ramka_z_elementami_steampunkowymi.png",
+    "size": "941x1672",
+    "variants": [
+      "original_png",
+      "transparent_png"
+    ]
+  },
+  {
+    "file": "HYDRA_Frame_03_square_serpent_ui.png",
+    "source": "gothic_ramka_z_serpentynami_i_neonami.png",
+    "size": "1254x1254",
+    "variants": [
+      "original_png",
+      "transparent_png"
+    ]
+  },
+  {
+    "file": "HYDRA_Frame_04_wide_compact_ui.png",
+    "source": "gotycka_ramka_ui_z_motywami_smoka.png",
+    "size": "1448x1086",
+    "variants": [
+      "original_png",
+      "transparent_png"
+    ]
+  }
+]

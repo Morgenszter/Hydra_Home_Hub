@@ -1,0 +1,29 @@
+{
+  "name": "HYDRA Alpha Legion HUD Tokens",
+  "version": "7.1.0",
+  "themes": [
+    "green",
+    "blue",
+    "red_alert",
+    "night_ops"
+  ],
+  "colors": {
+    "background": "#020706",
+    "accent": "#8dffdc",
+    "warning": "#ffd166",
+    "error": "#ff416c",
+    "success": "#8dffdc"
+  },
+  "components": [
+    "HUDButton",
+    "HUDCard",
+    "Radar",
+    "AnimatedBorder",
+    "GlowText",
+    "StatusIndicator",
+    "CommandConsole",
+    "DeviceTile",
+    "ProgressRing",
+    "HydraHudFrame"
+  ]
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>HYDRA Operator</title>
+  <style>
+    body { margin:0; background:#010504; color:#eafff8; font-family:Arial,sans-serif; }
+    main { padding:24px; }
+    .card { border:1px solid rgba(141,255,220,.25); background:rgba(0,18,16,.75); border-radius:18px; padding:16px; margin-bottom:14px; }
+    h1 { color:#8dffdc; letter-spacing:2px; }
+    button { background:#06251f; color:#8dffdc; border:1px solid rgba(141,255,220,.35); border-radius:12px; padding:10px 14px; margin:5px; font-weight:800; }
+    pre { white-space:pre-wrap; color:rgba(234,255,248,.78); }
+  
+    #hydra-loader { position:fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#010504; z-index:99; transition:opacity .35s ease; }
+    .loader-orb { width:120px; height:120px; border-radius:999px; border:1px solid rgba(141,255,220,.42); box-shadow:0 0 42px rgba(141,255,220,.35); animation:pulse 1.2s infinite alternate; }
+    .loader-text { margin-top:18px; color:#8dffdc; font-weight:900; letter-spacing:2px; }
+    @keyframes pulse { from { transform:scale(.92); opacity:.55; } to { transform:scale(1.05); opacity:1; } }
+
+    .alpha-frame-glow { position:fixed; inset:12px; pointer-events:none; border:1px solid rgba(141,255,220,.22); border-radius:26px; box-shadow:inset 0 0 42px rgba(141,255,220,.10), 0 0 52px rgba(141,255,220,.12); }
+    .card { box-shadow:0 0 24px rgba(141,255,220,.08); backdrop-filter: blur(8px); }
+</style>
+</head>
+<body>
+<div id="hydra-loader"><div class="loader-orb"></div><div class="loader-text">HYDRA OPERATOR LOADING</div></div><div class="alpha-frame-glow"></div><main>
+  <h1>HYDRA OPERATOR</h1>
+  <div class="card"><h2>V85 Alpha Dashboard</h2><p>Visual upgrade active: Alpha frames/icons/assets are packaged for Android HUD and desktop operator panel.</p></div>
+  <div class="card"><h2>Status</h2><pre id="status">Loading...</pre></div>
+  <div class="card">
+    <button onclick="action('pairing')">Pairing</button>
+    <button onclick="action('restart_bridge')">Restart Bridge</button>
+    <button onclick="action('restart_discovery')">Restart Discovery</button>
+    <button onclick="action('logs')">Logs</button>
+    <button onclick="action('emergency_red_alert')">Red Alert</button>
+    <button onclick="action('export_diagnostics')">Export Diagnostics</button>
+  </div>
+  <div class="card"><h2>Result</h2><pre id="result">—</pre></div>
+</main>
+<script>
+async function refresh() {
+  try {
+    const res = await fetch('http://127.0.0.1:8765/operator/status');
+    document.getElementById('status').textContent = JSON.stringify(await res.json(), null, 2);
+  } catch (e) { document.getElementById('status').textContent = String(e); }
+}
+async function action(name) {
+  try {
+    const res = await fetch('http://127.0.0.1:8765/operator/action', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({action:name})});
+    document.getElementById('result').textContent = JSON.stringify(await res.json(), null, 2);
+    refresh();
+  } catch (e) { document.getElementById('result').textContent = String(e); }
+}
+setTimeout(()=>{ const el=document.getElementById('hydra-loader'); if(el){ el.style.opacity='0'; setTimeout(()=>el.remove(), 400); }}, 900);
+refresh(); setInterval(refresh, 3000);
+</script>
+</body>
+</html>

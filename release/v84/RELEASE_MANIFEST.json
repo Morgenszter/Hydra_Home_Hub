@@ -1,0 +1,26 @@
+{
+  "release": "HYDRA v8.4 Code Sprint P1",
+  "canonical_entrypoints": {
+    "backend": "backend.api.asgi_v51:app",
+    "android": "src/app/HydraAndroidBootstrap.tsx",
+    "desktop": "desktop/operator_shell/hydra_operator_shell.py",
+    "voice": "backend/voice/native_voice_integration_v79.py"
+  },
+  "optional_dependencies": {
+    "voice": [
+      "openwakeword",
+      "vosk",
+      "sounddevice"
+    ],
+    "desktop": [
+      "pystray",
+      "pywebview",
+      "pillow"
+    ]
+  },
+  "release_checks": [
+    "python -m compileall backend",
+    "python -m compileall desktop",
+    "python backend/tests/hydra_v84_voice_desktop_smoke.py"
+  ]
+}

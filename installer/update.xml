@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appcast>
+  <item>
+    <title>HYDRA 8.4.0.1</title>
+    <version>8.4.0.1</version>
+    <releaseNotesLink>https://raw.githubusercontent.com/Morgenszter/Hydra_Home_Hub/main/CHANGELOG_8.4.0.1.html</releaseNotesLink>
+    <pubDate>Wed, 10 Jul 2026 10:00:00 GMT</pubDate>
+    <enclosure url="https://github.com/Morgenszter/Hydra_Home_Hub/releases/download/v8.4.0.1/HYDRA_Setup_8.4.0.1.exe"
+               sparkle:version="8.4.0.1"
+               sparkle:shortVersionString="8.4.0.1"
+               length="18754328"
+               type="application/octet-stream"/>
+  </item>
+</appcast>
