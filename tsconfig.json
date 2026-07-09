@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "moduleResolution": "Node",
+    "types": [
+      "react",
+      "react-native"
+    ],
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ]
+  },
+  "include": [
+    "App.tsx",
+    "src/app/**/*.ts",
+    "src/app/**/*.tsx",
+    "src/screens/HydraMainCockpitScreen.tsx",
+    "src/screens/HydraOperatorScreen.tsx",
+    "src/screens/LoadingScreen.tsx",
+    "src/screens/HydraV85AlphaDashboardShell.tsx",
+    "src/screens/HydraV85AlphaDashboardScreen.tsx",
+    "src/components/HydraAnimatedLoader.tsx",
+    "src/components/HydraGlassPanel.tsx",
+    "src/effects/HydraGuiEffectsTheme.ts",
+    "src/hooks/useHydraRuntimeBridge.ts",
+    "src/config/**/*.ts",
+    "src/theme/**/*.ts",
+    "src/types/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "backend",
+    "desktop",
+    "dist",
+    "src/v85/**",
+    "src/gui-effects-v5/**",
+    "src/components/hud/**",
+    "src/screens/HydraHudRecoveryScreen.tsx"
+  ]
+}

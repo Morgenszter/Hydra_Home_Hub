@@ -1,0 +1,106 @@
+Folder PATH listing for volume Systemowy M2
+Volume serial number is 00000062 E812:4F51
+C:.
+|   app.json
+|   App.tsx
+|   babel.config.js
+|   eas.json
+|   package.json
+|   structure.txt
+|   tsconfig.json
+|   
++---assets
+|   +---audio
+|   |       grzejnik1.mp3
+|   |       hydra.mp3
+|   |       rozkaz.mp3
+|   |       
+|   +---fonts
+|   +---images
+|   |   |   bottom_border.png
+|   |   |   hydra.png
+|   |   |   radar.png
+|   |   |   top_border.png
+|   |   |   
+|   |   \---icons
+|   \---textures
++---backend
+|   |   main.py
+|   |   requirements.txt
+|   |   
+|   +---api
+|   |       bridge.py
+|   |       
+|   +---config
+|   |       config.json
+|   |       
+|   +---devices
+|   |       led.py
+|   |       tapo.py
+|   |       tuya.py
+|   |       
+|   \---udp
+|           discovery.py
+|           
+\---src
+    +---components
+    |   +---common
+    |   |       Button.tsx
+    |   |       Card.tsx
+    |   |       LED.tsx
+    |   |       Panel.tsx
+    |   |       
+    |   \---hud
+    |           ConsoleLog.tsx
+    |           DeviceStatus.tsx
+    |           Footer.tsx
+    |           Header.tsx
+    |           HydraButton.tsx
+    |           Radar.tsx
+    |           StatusPanel.tsx
+    |           TargetSelector.tsx
+    |           ThermalGauge.tsx
+    |           
+    +---config
+    |       colors.ts
+    |       commands.ts
+    |       constants.ts
+    |       devices.ts
+    |       
+    +---context
+    |       HydraContext.tsx
+    |       
+    +---core
+    |       Logger.ts
+    |       Permissions.ts
+    |       Storage.ts
+    |       
+    +---hooks
+    |       useAudio.ts
+    |       useBLE.ts
+    |       useBridge.ts
+    |       useLogger.ts
+    |       useSpeech.ts
+    |       useTargets.ts
+    |       useThermal.ts
+    |       
+    +---models
+    |       Device.ts
+    |       Log.ts
+    |       Target.ts
+    |       Voice.ts
+    |       
+    +---screens
+    |       Devices.tsx
+    |       MainHUD.tsx
+    |       Settings.tsx
+    |       
+    +---services
+    |       AudioEngine.ts
+    |       BLEController.ts
+    |       BridgeClient.ts
+    |       TapoController.ts
+    |       TuyaController.ts
+    |       UDPDiscovery.ts
+    |       
+    \---utils

@@ -1,0 +1,21 @@
+{
+  "release": "HYDRA v8.3 Cleanup & Canonicalization",
+  "canonical": {
+    "backend_api": "backend.api.asgi_v51:app",
+    "android_root": "src/app/HydraAndroidBootstrap.tsx",
+    "desktop_operator": "desktop/operator_shell/hydra_operator_shell.py",
+    "voice_runtime": "backend/voice/native_voice_integration_v79.py",
+    "voice_execution": "backend/voice/voice_execution_runtime_v78.py",
+    "operator_api": "backend/api/operator_v73.py",
+    "toolchain_api": "backend/api/toolchain_v71.py",
+    "live_api": "backend/api/live_v69.py",
+    "runtime_state": "backend/core/hydra_runtime_state_v67.py"
+  },
+  "legacy_or_demo_candidates": [
+    "backend/api/asgi_v50.py",
+    "backend/api/main_v50.py",
+    "src/screens/HydraHudRecoveryScreen.tsx",
+    "src/components/hud/HydraFrameShowcasePanel.tsx"
+  ],
+  "rule": "Use canonical entrypoints for final product wiring. Keep legacy/demo modules only for reference until final removal."
+}
